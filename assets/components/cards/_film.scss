@@ -1,0 +1,87 @@
+@use "../../abstracts/variables"as *;
+@use "../../abstracts/mixins"as *;
+
+.menu{
+    ul{
+        display: flex;
+        gap: 3rem;
+
+        li{ 
+            list-style: none;
+        }
+    }
+    
+}
+
+.film{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.package{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.collection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+@media (max-width: 767px){
+    .collection{
+        width: 100%;
+        margin: 0 auto;
+        gap: 2rem;
+    }
+
+
+.film{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.menu{
+    ul{
+        gap: 2rem;
+        li{ 
+            white-space: nowrap;
+            font-size: 12px;
+            list-style: none;
+        }
+    }
+    
+}
+
+
+.film img{
+    width: 27%;
+    
+}
+
+.film img:first-child{
+    width: 100%;
+}
+
+.fleche-r{
+    position: absolute;
+    right: 0;
+    transform: rotate(180deg);
+}
+.fleche-l{
+    position: absolute;
+    left: 0;
+    
+}
+
+}

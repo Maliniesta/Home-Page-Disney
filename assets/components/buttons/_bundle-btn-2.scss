@@ -1,0 +1,9 @@
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
+
+.bundle-btn-2{
+    background-color: $btn-color;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+}

@@ -1,0 +1,77 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+body{
+  font-family: $font-primary, sans-serif;
+  background-color: $primary-color;
+}
+
+
+a{
+  @include a-style;
+}
+
+h1{
+  font-size: 43px;
+  color: $secondary-color;
+}
+
+h2{
+  font-size: 27px;
+  color: $secondary-color;
+}
+
+p{
+@include p-style(16px,$thirdary-color)
+}
+
+.little-size{
+  @include p-style(12px,$thirdary-color)
+}
+
+.link img{
+  width: 8rem;
+  height: 4rem;
+}
+
+.s-title{
+  @include p-style(12px,$thirdary-color)
+}
+
+.price{
+  @include p-style(26px,$secondary-color)
+}
+
+.little-bold{
+  @include p-style(12px,$secondary-color)
+}
+
+.social li{
+  @include p-style(12px, $thirdary-color )
+}
+
+.social li a{
+  @include p-style(12px, $thirdary-color)
+}
+
+@media (max-width: 767px){
+  h1{
+    font-size: 30px;
+  }
+
+  .title p{
+    width: 40%;
+    text-align: center;
+}
+.social li{
+  @include p-style(10px, $thirdary-color )
+}
+
+.social li a{
+  @include p-style(10px, $thirdary-color)
+}
+
+.little-size{
+  @include p-style(6px, $thirdary-color)
+}
+}

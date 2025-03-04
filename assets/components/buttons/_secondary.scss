@@ -1,0 +1,11 @@
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
+
+
+.secondary-btn{
+    @include button-style;
+    height: 60px ;
+    width: 100%;
+    margin: 0 auto;
+    
+}

@@ -1,0 +1,9 @@
+@use "../../abstracts/variables" as *;
+
+.nav-btn{
+   background-color: $primary-color;
+   color: $secondary-color;
+   font-size: $btn-size;
+   height: 3rem;
+   width: 6rem ;
+}
